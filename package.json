@@ -1,0 +1,16 @@
+{
+  "name": "homework",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ forieoacc1/homework",
+    "create-local": "graph create --node http://localhost:8020/ forieoacc1/homework",
+    "remove-local": "graph remove --node http://localhost:8020/ forieoacc1/homework",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 forieoacc1/homework"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.19.0"
+  }
+}
